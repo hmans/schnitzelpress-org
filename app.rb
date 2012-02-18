@@ -11,9 +11,9 @@ SchnitzelPress.mongo_uri =
 
 class App < SchnitzelPress::App
   configure do
-    set :blog_title, "schnitzelpress-org"
-    set :blog_description, "A new blog powered by SchnitzelPress."
-    set :author_name, "Your Name"
+    set :blog_title, "SchnitzelPress"
+    set :blog_description, "A lean, mean blogging machine for hackers and fools."
+    set :author_name, "Hendrik Mans"
     set :footer, "powered by [SchnitzelPress](http://schnitzelpress.org)"
     set :administrator, "browser_id:hendrik@mans.de"
 
