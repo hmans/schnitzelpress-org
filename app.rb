@@ -21,8 +21,8 @@ class App < SchnitzelPress::App
     #
     # set :disqus_name, "..."
     # set :google_analytics_id, "..."
-    # set :gauges_id, "..."
-    # set :twitter_id, '...'
+    set :gauges_id, "4f40682a844d524b41000068"
+    set :twitter_id, 'teamschnitzel'
     # set :read_more, "Read ALL the things"
   end
 end
