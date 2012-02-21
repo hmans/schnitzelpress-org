@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/teamschnitzel/schnitzelpress.git
-  revision: 0d3c740b7bbb84eb9e3d81d51f044253d66adccc
+  revision: c9c792d6a8e75bc74fc07cd07f7ddf02eb73d849
   specs:
-    schnitzelpress (0.0.5)
+    schnitzelpress (0.0.7)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5)
       chronic
@@ -16,8 +16,9 @@ GIT
       rack-cache
       rake
       redcarpet
+      ruby-oembed
       sass
-      schnitzelstyle (~> 0.0.4)
+      schnitzelstyle (~> 0.0.7)
       sinatra (~> 1.3.2)
       thor
       tilt (~> 1.3.0)
@@ -25,9 +26,9 @@ GIT
 
 GIT
   remote: git://github.com/teamschnitzel/schnitzelstyle.git
-  revision: 208b635eb339a3c0df296c9c4da5a583bf9d9ec8
+  revision: c1c62e8cb59845934176b88d177b9b53e85407eb
   specs:
-    schnitzelstyle (0.0.4)
+    schnitzelstyle (0.0.7)
       sass
 
 GEM
@@ -85,6 +86,7 @@ GEM
     redcarpet (2.1.0)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    ruby-oembed (0.8.5)
     rubyzip (0.9.6.1)
     sass (3.1.15)
     shotgun (0.9)
