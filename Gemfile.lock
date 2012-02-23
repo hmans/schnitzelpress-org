@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/teamschnitzel/schnitzelpress.git
-  revision: 3e3c32b9ac4df01882f61b74435757767972f138
+  revision: c8ceffc6393dee676cfafff7e1c542e1b015e56e
   specs:
     schnitzelpress (0.0.10)
       activesupport (~> 3.2.0)
