@@ -5,6 +5,10 @@ group :development do
   gem 'heroku'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 # For now, we're going to be using the development versions of
 # schnitzelstyle and schnitzelpress. I told you you were about
 # to live dangerously!
