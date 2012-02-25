@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'unicorn', '~> 4.2.0'
+gem 'rack-cache', '~> 1.1.0', :require => 'rack/cache'
+
 group :development do
   gem 'shotgun', '~> 0.9.0'
   gem 'heroku', '~> 2.20.0'
-end
-
-group :production do
-  gem 'unicorn', '~> 4.2.0'
-  gem 'rack-cache', '~> 1.1.0', :require => 'rack/cache'
 end
 
 # For now, we're going to be using the development versions of
