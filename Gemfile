@@ -12,8 +12,10 @@ end
 # schnitzelstyle and schnitzelpress. I told you you were about
 # to live dangerously!
 #
-gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
+# gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
+# gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
+
+gem 'schnitzelpress', '~> 0.1.0'
 
 # If you'd prefer to use the officially released versions,
 # use these instead:
