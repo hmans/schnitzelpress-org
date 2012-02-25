@@ -7,7 +7,7 @@ end
 
 group :production do
   gem 'unicorn', '~> 4.2.0'
-  gem 'rack-cache', '~> 1.1.0'
+  gem 'rack-cache', '~> 1.1.0', :require => 'rack/cache'
 end
 
 # For now, we're going to be using the development versions of
