@@ -1,6 +1,8 @@
 $stdout.sync = true
 require File.expand_path("../app.rb", __FILE__)
 
+require 'rack/cache'
+
 # Add some caching. This is designed to work out of the box
 # on Heroku, but feel free to change this if eg. you'd prefer
 # to use Memcache.
