@@ -6,6 +6,7 @@ require File.expand_path("../app.rb", __FILE__)
 # to use Memcache.
 #
 if SchnitzelPress.env.production?
+  require 'rack-cache'
   use Rack::Cache, {
     :verbose     => true,
     :metastore   => URI.encode("file:/tmp/cache/meta"),
