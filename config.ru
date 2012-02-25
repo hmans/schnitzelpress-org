@@ -5,14 +5,13 @@ require File.expand_path("../app.rb", __FILE__)
 # on Heroku, but feel free to change this if eg. you'd prefer
 # to use Memcache.
 #
-# if SchnitzelPress.env.production?
-#   require 'rack/cache'
-#   use Rack::Cache, {
-#     :verbose     => true,
-#     :metastore   => URI.encode("file:/tmp/cache/meta"),
-#     :entitystore => URI.encode("file:/tmp/cache/body")
-#   }
-# end
+if SchnitzelPress.env.production?
+  use Rack::Cache, {
+    :verbose     => true,
+    :metastore   => URI.encode("file:/tmp/cache/meta"),
+    :entitystore => URI.encode("file:/tmp/cache/body")
+  }
+end
 
 # Run the app, with support for files in ./public/
 #
