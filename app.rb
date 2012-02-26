@@ -3,17 +3,17 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-SchnitzelPress.mongo_uri = case SchnitzelPress.env
+Schnitzelpress.mongo_uri = case Schnitzelpress.env
   when "development" then 'mongodb://localhost/schnitzelpress-org'
   when "production"  then ENV['MONGOLAB_URI'] || ENV['MONGOHQ_URL'] || ENV['MONGO_URL']
 end
 
-class App < SchnitzelPress::App
+class App < Schnitzelpress::App
   configure do
-    set :blog_title, "SchnitzelPress"
+    set :blog_title, "Schnitzelpress"
     set :blog_description, "A lean, mean blogging machine for hackers and fools."
     set :author_name, "Hendrik Mans"
-    set :footer, "powered by [SchnitzelPress #{SchnitzelPress::VERSION}](http://schnitzelpress.org)"
+    set :footer, "powered by [Schnitzelpress #{Schnitzelpress::VERSION}](http://schnitzelpress.org)"
     set :administrator, {
       :provider => "browser_id",
       :uid      => "hendrik@mans.de"
