@@ -13,9 +13,9 @@ end
 # to live dangerously!
 #
 # gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-# gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
+gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git', :branch => '0-1-stable'
 
-gem 'schnitzelpress', '~> 0.1.0'
+#gem 'schnitzelpress', '~> 0.1.0'
 
 # If you'd prefer to use the officially released versions,
 # use these instead:
