@@ -1,8 +1,8 @@
 GIT
   remote: git://github.com/hmans/schnitzelpress.git
-  revision: aac0830f37a1b22a37dca737c6c2e157c801fd4c
+  revision: 7c81e172e0ae25cd97f310b654bd732cab6aa67c
   specs:
-    schnitzelpress (0.2.0)
+    schnitzelpress (0.2.0.dev)
       activesupport (~> 3.2.0)
       bson_ext (~> 1.5.0)
       chronic (~> 0.6.7)
@@ -13,8 +13,10 @@ GIT
       mongoid (~> 2.4.0)
       omniauth (~> 1.0.2)
       omniauth-browserid (~> 0.0.1)
+      packr (~> 3.1.1)
       pry (~> 0.9.8)
       rack (~> 1.4.1)
+      rack-cache (~> 1.1.0)
       rack-contrib (~> 1.1.0)
       rake (~> 0.9.2.2)
       redcarpet (~> 2.1.0)
@@ -27,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/hmans/schnitzelstyle.git
-  revision: d1c9f27083564b00903c6a25f74f994b00f271c5
+  revision: e7acb90eb93d6dc519380175c49626a4f6a6fd57
   specs:
     schnitzelstyle (0.1.1.dev)
       sass
@@ -63,7 +65,7 @@ GEM
     kgio (2.7.2)
     launchy (2.0.5)
       addressable (~> 2.2.6)
-    method_source (0.7.0)
+    method_source (0.7.1)
     mime-types (1.17.2)
     mongo (1.5.2)
       bson (= 1.5.2)
@@ -80,6 +82,9 @@ GEM
       faraday
       multi_json
       omniauth (~> 1.0)
+    oyster (0.9.5)
+    packr (3.1.1)
+      oyster (>= 0.9.5)
     pry (0.9.8.2)
       coderay (~> 1.0.5)
       method_source (~> 0.7)
@@ -120,7 +125,6 @@ PLATFORMS
 
 DEPENDENCIES
   heroku (~> 2.20.0)
-  rack-cache (~> 1.1.0)
   schnitzelpress!
   schnitzelstyle!
   shotgun (~> 0.9.0)
