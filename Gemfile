@@ -12,7 +12,7 @@ end
 # to live dangerously!
 #
 gem 'schnitzelstyle',  git: 'git://github.com/hmans/schnitzelstyle.git'
-gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git'
+gem 'schnitzelpress',      git: 'git://github.com/hmans/schnitzelpress.git', :branch => 'config'
 
 #gem 'schnitzelpress', '~> 0.1.0'
 
